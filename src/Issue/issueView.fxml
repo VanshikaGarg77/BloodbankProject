@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="467.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Issue.issueViewController">
+   <children>
+      <Label layoutX="184.0" layoutY="20.0" text="Receiver Details">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="111.0" text="Name:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="152.0" text="Date Of Issue:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="191.0" text="Blood Group:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="9.0" layoutY="225.0" text="Required Quantity:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="62.0" layoutY="266.0" text="Hospital:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="63.0" layoutY="342.0" text="Amount:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="63.0" layoutY="303.0" text="Cause:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="69.0" fitWidth="179.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@issue.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="287.0" fitWidth="232.0" layoutX="337.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtName" layoutX="127.0" layoutY="111.0" />
+      <DatePicker fx:id="issueDate" layoutX="127.0" layoutY="152.0" prefHeight="26.0" prefWidth="150.0" />
+      <ComboBox fx:id="bloodGrp" layoutX="131.0" layoutY="191.0" prefWidth="150.0" promptText="Select" />
+      <TextField fx:id="txtUnits" layoutX="136.0" layoutY="225.0" prefHeight="26.0" prefWidth="141.0" />
+      <TextField fx:id="txtHospital" layoutX="132.0" layoutY="266.0" />
+      <TextField fx:id="txtCause" layoutX="132.0" layoutY="304.0" />
+      <TextField fx:id="txtAmount" layoutX="132.0" layoutY="342.0" />
+      <Button layoutX="124.0" layoutY="389.0" mnemonicParsing="false" onAction="#doIssue" prefHeight="34.0" prefWidth="94.0" text="Issue" textFill="#302424">
+         <font>
+            <Font name="Arial Bold" size="21.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblStatus" layoutX="344.0" layoutY="400.0" text="Status" />
+   </children>
+</AnchorPane>
